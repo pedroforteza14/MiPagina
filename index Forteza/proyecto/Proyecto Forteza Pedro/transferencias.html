@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><br>
+    <div>
+        <label for="genero">caja de Ahorro</label>
+        <input type="radio" name="genero" value="mujer">En Pesos
+        <input type="radio" name="genero" value="hombre">En Dolares
+        <input type="radio" name="genero" value="desviado">Criptomonedas
+    </div>
+    <br><br>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">Motivo</label>
+        <select id="inputState" class="form-select">
+          <option selected>Seleccione</option>
+          <option value="">alquileres</option>
+          <option value="">cuotas</option>
+          <option value="">expensas</option>
+          <option value="">facturas</option>
+          <option value="">haberes</option>
+          <option value="">honorarios</option>
+          <option value="">prestamos</option>
+          <option value="">varios</option>
+        </select>
+      </div>
+      <br><br>
+    <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <span class="input-group-text">0.00</span>
+        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Importe">
+    </div>
+    <br>
+    <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <span class="input-group-text">0.00</span>
+        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Confirme Importe">
+    </div>
+    <h4>Escriba destinatario</h4>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Alias/CBU/email" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <br>
+      <br>
+      <div class="input-group">
+        <span class="input-group-text"></span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+</body>
+</html>

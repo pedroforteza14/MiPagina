@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat';
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:  wheat;
+}
+
+.navbar{
+    border: 1px solid black;
+    background-color:wheat  ;
+    height: 100px;
+}
+
+.lista_nav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: large;
+    list-style: none;
+    top: 35%;
+    left: -40px;
+
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+.lista_nav .imagen{
+    width: 60%;
+    position: relative;
+    left: 1%;
+    top: -30px;
+
+}
+li{
+    height: 20px;
+    margin: 20px;
+}
+.imagen{
+    padding: 17px;
+}
+h3{
+    margin: 2rem;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+.padre{
+    width: 90%;
+    margin: 10px auto;
+    display:grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns:1fr 1fr; 
+    gap: 10px;      
+    grid-template-areas: 
+    "Creditos Inversiones"
+    "Transferencias App";
+}
+.hijo{
+    width: 100%;
+    border-radius: 3px;
+}
+.Creditos{
+    background-color: wheat;
+    grid-area: Creditos;
+}
+.Inversiones{
+    background-color: wheat;
+    grid-area: Inversiones;
+}
+.Transferencias{
+    background-color: wheat;
+    grid-area: Transferencias;
+}
+.App{
+    background-color: wheat;
+    grid-area: App;
+}
+.padre2{
+    width: 90%;
+    margin: 10px auto;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr; 
+    gap: 10px;
+    grid-template-areas:    
+        "header header header"
+        "innovador simple cercano"
+        "footer footer footer";
+}
+.hijo2{
+    width: 100%;
+    border-radius: 3px;
+}
+.header{
+    text-align: center;
+    grid-area:header ;
+}
+.innovador{
+    grid-area:innovador ;
+}
+.simple{
+    grid-area:simple ;
+}
+.cercano{
+    grid-area:cercano ;
+}
+.footer{
+    grid-area: footer;
+}
